@@ -15,9 +15,11 @@ jobs:
     - uses: actions/checkout@v3
 #    - name: configure
 #      run: ./configure
-    - name: make
+#   - put norminette bin in repository to execute
+    - name: Install dependencies
       run: make
     - name: leaks
       run: make debug
     - name: norminette
       run: make norm
+  #norminette whit path absolut
