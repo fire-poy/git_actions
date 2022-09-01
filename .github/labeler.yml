@@ -16,4 +16,4 @@ operation:
 - any: 'operation/**/*.c'
   
 include:  
-- any: 'inc/*.h
+- any: 'inc/*.h'
