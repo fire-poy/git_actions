@@ -6,7 +6,7 @@
 /*   By: mpons <mpons@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 21:53:01 by mpons             #+#    #+#             */
-/*   Updated: 2022/02/25 19:50:15 by mpons            ###   ########.fr       */
+/*   Updated: 2022/09/01 19:49:57 by mpons            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,7 @@ void	choix4(t_stack *a, t_stack *b, t_ch *c)
 
 int	choix(t_stack *a, t_stack *b, t_ch *c)
 {
+
 	find_values(a, b, c);
 	if (c->a <= c->b && c->a <= c->c && c->a <= c->d)
 	{

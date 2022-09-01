@@ -6,7 +6,7 @@
 /*   By: mpons <mpons@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 21:01:58 by mpons             #+#    #+#             */
-/*   Updated: 2022/02/25 19:11:27 by mpons            ###   ########.fr       */
+/*   Updated: 2022/09/01 19:27:21 by mpons            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ t_stack	*init_stack(void)
 	stk->top = NULL;
 	stk->bot = NULL;
 	stk->size = 0;
+	stk->pos = 0;
 	stk->min = 0;
 	stk->max = 0;
-	stk->pos = 0;
 	stk->piv = 0;
 	return (stk);
 }
