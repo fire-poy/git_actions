@@ -7,18 +7,13 @@ source:
 - any: ['src/**/*.c']
 
 algoritm:
-  - 'algos/**/*.c'
+- any: 'algos/**/*.c'
   
 libft:
-  - 'libft/**/*.c'
+- any: 'libft/**/*.c'
   
 operation:
-  - 'operation/**/*.c'
+- any: 'operation/**/*.c'
   
 include:  
-  - 'inc/*.h
-
-# # Add 'frontend` label to any change to *.js files as long as the `main.js` hasn't changed
-# frontend:
-# - any: ['src/**/*.js']
-#   all: ['!src/main.js']
+- any: 'inc/*.h
