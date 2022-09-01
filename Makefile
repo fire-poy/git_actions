@@ -6,14 +6,15 @@
 #    By: mpons <mpons@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/23 17:30:16 by mpons             #+#    #+#              #
-#    Updated: 2022/08/29 21:25:20 by mpons            ###   ########.fr        #
+#    Updated: 2022/09/01 19:35:51 by mpons            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= push_swap
 
 CC			= gcc
-CFLAGS		= -g -Wall -Wextra -Werror -fsanitize=address
+CFLAGS		= -Wall -Wextra -Werror
+DEBUG_CFLAGS = -g3 -fsanitize=address -fno-omit-frame-pointer
 
 OBJS		= ${SRC:.c=.o}
 
@@ -44,7 +45,15 @@ all: $(NAME)
 
 $(NAME):	$(OBJS)
 			$(MAKE) -C $(LIBFT_DIR)
-			$(CC) -o $(NAME) $(SRC) $(LIB)
+			$(CC) -o $(NAME) $(SRC) $(LIB) $(DEBUG_CFLAGS)
+
+debug: fclean
+debug: CFLAGS += $(DEBUG_CFLAGS)
+debug: MLX_FLAGS += $(DEBUG_CFLAGS)
+debug: $(NAME)
+
+norm:
+	./norminette -d ./src ./operation ./algos
 
 clean:
 			$(MAKE) -C $(LIBFT_DIR) clean
