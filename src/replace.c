@@ -6,7 +6,7 @@
 /*   By: mpons <mpons@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 15:19:35 by mpons             #+#    #+#             */
-/*   Updated: 2022/02/25 19:48:48 by mpons            ###   ########.fr       */
+/*   Updated: 2022/09/06 12:14:00 by mpons            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void	sort_tab(int *tab, int size)
 	}
 }
 
+//lignes de commentaires vide
 void	find_pos_and_replace(t_stack *a, int *tab)
 {
 	int		i;
