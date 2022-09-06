@@ -20,6 +20,6 @@ jobs:
       run: make
     - name: leaks
       run: make debug
-    - name: norminette
-      run: make norm
+#     - name: norminette
+#       run: make norm
   #norminette whit path absolut
