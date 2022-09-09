@@ -6,12 +6,13 @@
 /*   By: mpons <mpons@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 19:15:14 by mpons             #+#    #+#             */
-/*   Updated: 2022/02/25 19:23:23 by mpons            ###   ########.fr       */
+/*   Updated: 2022/09/09 21:33:13 by mpons            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
+//tres jolie commentaire
 void	sort_3(t_stack *a, t_stack *b)
 {
 	if (find_min(a) == 0 && find_max(a) == 1)

@@ -6,7 +6,7 @@
 /*   By: mpons <mpons@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/25 14:16:45 by mpons             #+#    #+#             */
-/*   Updated: 2022/02/25 19:20:11 by mpons            ###   ########.fr       */
+/*   Updated: 2022/09/09 21:00:54 by mpons            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ void	ft_push_one(t_stack *a, t_stack *b)
 		a->top->next = b->top;
 		b->top = a->top;
 	}
-	a->top = NULL;
 	a->bot = NULL;
+	a->top = NULL;
 }
 
 void	ft_push_pop(t_stack *a, t_stack *b)
