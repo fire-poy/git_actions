@@ -7,13 +7,17 @@ source:
 - any: ['src/**/*.c']
 
 algoritm:
-- any: 'algos/**/*.c'
+- any: ['algos/**/*.c']
   
 libft:
-- any: 'libft/**/*.c'
+- any: ['libft/**/*.c']
   
 operation:
-- any: 'operation/**/*.c'
+- any: ['operation/**/*.c']
   
 include:  
-- any: 'inc/*.h'
+- any: ['inc/*.h']
+# label1:
+# - example1/*
+# label1:
+# - any: ['example1/*']
